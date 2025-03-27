@@ -11,14 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('user_questions', function (Blueprint $table) {
-            $table->id(); //Primary key
-            $table->string('type')->index();
-            $table->string('ui_type');
-            $table->longText('question');
-            $table->json('options');
-            $table->boolean('have_followup');
-            $table->json('followup_questions')->nullable();
+        Schema::create('home_remedies', function(Blueprint $table){
+            $table->id();
+            $table->string('title');
+            $table->text('description');
+            $table->text('usage');
+            $table->enum('prakruti', array('vata','pitta','kapha'));
             $table->timestamps();
             $table->softDeletes();
         });
@@ -29,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::drop('user_questions');
+        Schema::drop('home_remedies');
     }
 };

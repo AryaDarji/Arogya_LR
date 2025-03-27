@@ -18,10 +18,14 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->integer('phone_number')->unique()->nullable();
+            $table->date('dob');
+            $table->enum('gender', array('Male','Female','Other'));
+            $table->enum('prakruti_type', array('Vata','Pitta','Kapha','Mixed'));
+            $table->string('alergies');
             $table->rememberToken();
             $table->timestamps();
         });
-
+        
         Schema::create('password_reset_tokens', function (Blueprint $table) {
             $table->string('email')->primary();
             $table->string('token');

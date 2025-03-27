@@ -11,14 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('user_questions', function (Blueprint $table) {
-            $table->id(); //Primary key
-            $table->string('type')->index();
-            $table->string('ui_type');
-            $table->longText('question');
-            $table->json('options');
-            $table->boolean('have_followup');
-            $table->json('followup_questions')->nullable();
+        Schema::create('user_saved_remedies', function(Blueprint $table){
+            $table->id();
+            $table->foreignId('user_id');
+            $table->foreignId('remedy_id');
+            $table->enum('status', array('saved', 'tried', 'tracking'));
+            $table->text('notes');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -29,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::drop('user_questions');
+        Schema::dropIfExists('user_saved_remedies');
     }
 };

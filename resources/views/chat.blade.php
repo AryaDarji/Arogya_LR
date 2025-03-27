@@ -53,6 +53,7 @@
 
                     // Display bot's response
                     chatbox.append(`<div class="message bot">ChatGPT: ${response.response}</div>`);
+                    console.log(response);
 
                     // Auto-scroll to the bottom
                     chatbox.scrollTop(chatbox[0].scrollHeight);
