@@ -18,10 +18,10 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->integer('phone_number')->unique()->nullable();
-            $table->date('dob');
-            $table->enum('gender', array('Male','Female','Other'));
-            $table->enum('prakruti_type', array('Vata','Pitta','Kapha','Mixed'));
-            $table->string('alergies');
+            $table->date('dob')->default('2000-01-01')->change()->nullable();
+            $table->enum('gender', array('Male','Female','Other'))->nullable();
+            $table->enum('prakruti_type', array('Vata','Pitta','Kapha','Mixed'))->nullable();
+            $table->string('alergies')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
