@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use Carbon\Carbon;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
 
 class User_questions extends Seeder
 {
@@ -13,7 +15,7 @@ class User_questions extends Seeder
      */
     public function run(): void
     {
-        $data = [
+        DB::table('user_questions')->insert([
         [
           'id' => '',
           'type' => 'intro',
@@ -479,6 +481,6 @@ class User_questions extends Seeder
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ]
-        ];
+        ]);
     }
 }
