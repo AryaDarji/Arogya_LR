@@ -21,6 +21,7 @@ class User_questions extends Seeder
           'options' => '',
           'have_followup' => false,
           'followup_questions' => [],
+          'ui_type' => '',
           'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
           'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ],
@@ -31,6 +32,7 @@ class User_questions extends Seeder
             'options' => ['male', 'female', 'other'],
             'have_followup' => false,
             'followup_questions' => [],
+            'ui_type' => '',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ],
@@ -41,6 +43,7 @@ class User_questions extends Seeder
           'options' => '',
           'have_followup' => false,
           'followup_questions' => [],
+          'ui_type' => '',
           'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
           'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ],
@@ -51,6 +54,7 @@ class User_questions extends Seeder
                 'options' => '',
                 'have_followup' => false,
                 'followup_questions' => [],
+                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
@@ -61,6 +65,7 @@ class User_questions extends Seeder
                 'options' => '',
                 'have_followup' => false,
                 'followup_questions' => [],
+                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
@@ -75,6 +80,7 @@ class User_questions extends Seeder
                           'recover fast'],
             'have_followup' => false,
             'followup_questions' => [],
+            'ui_type' => '',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
@@ -88,6 +94,7 @@ class User_questions extends Seeder
                               'Changes daily'],
                 'have_followup' => false,
                 'followup_questions' => [],
+                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
@@ -103,6 +110,7 @@ class User_questions extends Seeder
                               'Other'],
                 'have_followup' => false,
                 'followup_questions' => [],
+                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
@@ -117,6 +125,7 @@ class User_questions extends Seeder
                               'Other'],
                 'have_followup' => false,
                 'followup_questions' => [],
+                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
@@ -130,6 +139,7 @@ class User_questions extends Seeder
                               'No allergies'],
                 'have_followup' => false,
                 'followup_questions' => [],
+                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
@@ -177,7 +187,7 @@ class User_questions extends Seeder
                         'type'=>'balance_prakruti'
                     ]
                 ],
-
+                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
@@ -225,6 +235,7 @@ class User_questions extends Seeder
                         'type' => 'kapha'
                     ],
                 ],
+                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
@@ -256,6 +267,7 @@ class User_questions extends Seeder
                 ],
                 'have_followup' => false,
                 'followup_questions' => [],
+                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
@@ -295,6 +307,7 @@ class User_questions extends Seeder
                         'type' => 'kapha'
                     ]
                 ],
+                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
@@ -318,6 +331,7 @@ class User_questions extends Seeder
                 ],
                 'have_followup' => false,
                 'followup_questions' => [],
+                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
@@ -357,6 +371,7 @@ class User_questions extends Seeder
                         'type' => 'kapha'
                     ]
                 ],
+                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
@@ -409,6 +424,7 @@ class User_questions extends Seeder
                         'type' => 'Mix of vata pitta and kapha'
                     ]
                 ],
+                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
@@ -452,6 +468,7 @@ class User_questions extends Seeder
                         'type' => 'kapha'
                     ]
                 ],
+                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ]
