@@ -17,61 +17,62 @@ class User_questions extends Seeder
         [
           'id' => '',
           'type' => 'intro',
+          'ui_type' => '',
           'question' => 'Name',
           'options' => '',
           'have_followup' => false,
           'followup_questions' => [],
-          'ui_type' => '',
           'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
           'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ],
         [
             'id' => '1',
             'type' => 'intro',
+            'ui_type' => '',
             'question' => 'Gender?',
             'options' => ['male', 'female', 'other'],
             'have_followup' => false,
             'followup_questions' => [],
-            'ui_type' => '',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ],
         [
           'id' => '',
           'type' => 'intro',
+          'ui_type' => '',
           'question' => 'Height',
           'options' => '',
           'have_followup' => false,
           'followup_questions' => [],
-          'ui_type' => '',
           'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
           'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ],
             [
                 'id' => '',
                 'type' => 'intro',
+                'ui_type' => '',
                 'question' => 'Weight',
                 'options' => '',
                 'have_followup' => false,
                 'followup_questions' => [],
-                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'id' => '',
                 'type' => 'intro',
+                'ui_type' => '',
                 'question' => 'Age',
                 'options' => '',
                 'have_followup' => false,
                 'followup_questions' => [],
-                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
             'id' => '2',
             'type' => 'intro',
+            'ui_type' => '',
             'question' => 'How do you feel during exercise?',
             'options' => ['Get tired quickly',
                           'Strong and active',
@@ -80,13 +81,13 @@ class User_questions extends Seeder
                           'recover fast'],
             'have_followup' => false,
             'followup_questions' => [],
-            'ui_type' => '',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'id' => '3',
                 'type' => 'intro',
+                'ui_type' => '',
                 'question' => 'How much do you move in a day?',
                 'options' => ['Sit a lot',
                               'On my feet all day',
@@ -94,13 +95,13 @@ class User_questions extends Seeder
                               'Changes daily'],
                 'have_followup' => false,
                 'followup_questions' => [],
-                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'id' => '4',
                 'type' => 'intro',
+                'ui_type' => '',
                 'question' => 'Do you have any health issues?',
                 'options' => ['No health issues',
                               'Thyroid',
@@ -110,13 +111,13 @@ class User_questions extends Seeder
                               'Other'],
                 'have_followup' => false,
                 'followup_questions' => [],
-                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'id' => '5',
                 'type' => 'intro',
+                'ui_type' => '',
                 'question' => 'Does anyone in your family have these health problems?',
                 'options' => ['Heart problem',
                               'Diabetes',
@@ -125,13 +126,13 @@ class User_questions extends Seeder
                               'Other'],
                 'have_followup' => false,
                 'followup_questions' => [],
-                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'id' => '6',
                 'type' => 'intro',
+                'ui_type' => '',
                 'question' => 'Do you have any allergies?',
                 'options' => ['Yes to food',
                               'Yes to medications',
@@ -139,13 +140,13 @@ class User_questions extends Seeder
                               'No allergies'],
                 'have_followup' => false,
                 'followup_questions' => [],
-                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'id' => '7',
                 'type' => "prakruti",
+                'ui_type' => '',
                 'question' => "How do you feel in different weather?",
                 'options' => [
                     [
@@ -163,7 +164,7 @@ class User_questions extends Seeder
                     [
                         'option' => 'I feel okay in all weather',
                         'type' => 'balance_prakruti'],
-                ],
+                    ],
                 'have_followup' => true,
                 'followup_questions' => [
                     [
@@ -187,13 +188,13 @@ class User_questions extends Seeder
                         'type'=>'balance_prakruti'
                     ]
                 ],
-                'ui_type' => '',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'id' => '8',
                 'type' => "prakruti",
+                'ui_type' => '',
                 'question' => "How often do you feel hungry?",
                 'options' => [
                     [
@@ -235,13 +236,14 @@ class User_questions extends Seeder
                         'type' => 'kapha'
                     ],
                 ],
-                'ui_type' => '',
+                
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'id' => '9',
                 'type' => "prakruti",
+                'ui_type' => '',
                 'question' => "How is your digestion?",
                 'options' => [
                     [
@@ -267,13 +269,14 @@ class User_questions extends Seeder
                 ],
                 'have_followup' => false,
                 'followup_questions' => [],
-                'ui_type' => '',
+                
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'id' => '10',
                 'type' => "prakruti",
+                'ui_type' => '',
                 'question' => "How is your sleep?",
                 'options' => [
                     [
@@ -307,13 +310,14 @@ class User_questions extends Seeder
                         'type' => 'kapha'
                     ]
                 ],
-                'ui_type' => '',
+                
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'id' => '11',
                 'type' => "prakruti",
+                'ui_type' => '',
                 'question' => "How do you respond to stress?",
                 'options' => [
                     [
@@ -331,13 +335,14 @@ class User_questions extends Seeder
                 ],
                 'have_followup' => false,
                 'followup_questions' => [],
-                'ui_type' => '',
+                
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'id' => '12',
                 'type' => "prakruti",
+                'ui_type' => '',
                 'question' => "How do you feel most of the time?",
                 'options' => [
                     [
@@ -371,13 +376,14 @@ class User_questions extends Seeder
                         'type' => 'kapha'
                     ]
                 ],
-                'ui_type' => '',
+                
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'id' => '13',
                 'type' => "prakruti",
+                'ui_type' => '',
                 'question' => "How would you describe your skin?",
                 'options' => [
                     [
@@ -424,13 +430,14 @@ class User_questions extends Seeder
                         'type' => 'Mix of vata pitta and kapha'
                     ]
                 ],
-                'ui_type' => '',
+                
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'id' => '14',
                 'type' => "prakruti",
+                'ui_type' => '',
                 'question' => "How is your memory?",
                 'options' => [
                     [
@@ -468,7 +475,7 @@ class User_questions extends Seeder
                         'type' => 'kapha'
                     ]
                 ],
-                'ui_type' => '',
+                
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ]

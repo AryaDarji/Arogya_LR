@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('user_questions', function (Blueprint $table) {
             $table->id(); //Primary key
             $table->string('type')->index();
-            $table->string('ui_type');
+            $table->string('ui_type')->nullable();
             $table->longText('question');
             $table->json('options');
             $table->boolean('have_followup');
