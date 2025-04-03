@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('type')->index();
             $table->string('ui_type')->nullable();
             $table->longText('question');
-            $table->json('options');
+            $table->json('options')->nullable();
             $table->boolean('have_followup');
             $table->json('followup_questions')->nullable();
             $table->timestamps();

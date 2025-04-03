@@ -17,85 +17,86 @@ class User_questions extends Seeder
     {
         DB::table('user_questions')->insert([
         [
+          
           'type' => 'intro',
-          'ui_type' => 'select',
+          'ui_type' => '',
           'question' => 'Name',
           'options' => json_encode([]),
-          'have_followup' => false,
+          'have_followup' => 0,
           'followup_questions' => json_encode([]),
-          'created_at' => Carbon::now(),
-          'updated_at' => Carbon::now(),
+          'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+          'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ],
         [
             'type' => 'intro',
-            'ui_type' => 'select',
+            'ui_type' => '',
             'question' => 'Gender?',
             'options' => json_encode(['male', 'female', 'other']),
-            'have_followup' => false,
+            'have_followup' => 0,
             'followup_questions' => json_encode([]),
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ],
         [
-            'type' => 'intro',
-            'ui_type' => 'select',
-            'question' => 'Height',
-            'options' => json_encode([]),
-            'have_followup' => false,
-            'followup_questions' => json_encode([]),
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+          'type' => 'intro',
+          'ui_type' => '',
+          'question' => 'Height',
+          'options' => json_encode([]),
+          'have_followup' => 0,
+          'followup_questions' => json_encode([]),
+          'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+          'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ],
             [
                 'type' => 'intro',
-                'ui_type' => 'select',
+                'ui_type' => '',
                 'question' => 'Weight',
                 'options' => json_encode([]),
-                'have_followup' => false,
+                'have_followup' => 0,
                 'followup_questions' => json_encode([]),
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'type' => 'intro',
-                'ui_type' => 'select',
+                'ui_type' => '',
                 'question' => 'Age',
                 'options' => json_encode([]),
-                'have_followup' => false,
+                'have_followup' => 0,
                 'followup_questions' => json_encode([]),
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
             'type' => 'intro',
-            'ui_type' => 'select',
+            'ui_type' => '',
             'question' => 'How do you feel during exercise?',
             'options' => json_encode(['Get tired quickly',
                           'Strong and active',
                           'Prefer slow and easy',
                           'Push hard',
                           'recover fast']),
-            'have_followup' => false,
+            'have_followup' => 0,
             'followup_questions' => json_encode([]),
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'type' => 'intro',
-                'ui_type' => 'select',
+                'ui_type' => '',
                 'question' => 'How much do you move in a day?',
                 'options' => json_encode(['Sit a lot',
                               'On my feet all day',
                               'Mix of both',
                               'Changes daily']),
-                'have_followup' => false,
+                'have_followup' => 0,
                 'followup_questions' => json_encode([]),
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'type' => 'intro',
-                'ui_type' => 'select',
+                'ui_type' => '',
                 'question' => 'Do you have any health issues?',
                 'options' => json_encode(['No health issues',
                               'Thyroid',
@@ -103,41 +104,41 @@ class User_questions extends Seeder
                               'Cancer',
                               'Hypertension(high bp)',
                               'Other']),
-                'have_followup' => false,
+                'have_followup' => 0,
                 'followup_questions' => json_encode([]),
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'type' => 'intro',
-                'ui_type' => 'select',
+                'ui_type' => '',
                 'question' => 'Does anyone in your family have these health problems?',
                 'options' => json_encode(['Heart problem',
                               'Diabetes',
                               'High blood pressure(hypertension)',
                               'None of these',
                               'Other']),
-                'have_followup' => false,
+                'have_followup' => 0,
                 'followup_questions' => json_encode([]),
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'type' => 'intro',
-                'ui_type' => 'select',
+                'ui_type' => '',
                 'question' => 'Do you have any allergies?',
                 'options' => json_encode(['Yes to food',
                               'Yes to medications',
                               'Yes to dust/pollens',
                               'No allergies']),
-                'have_followup' => false,
+                'have_followup' => 0,
                 'followup_questions' => json_encode([]),
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'type' => "prakruti",
-                'ui_type' => 'select',
+                'ui_type' => '',
                 'question' => "How do you feel in different weather?",
                 'options' => json_encode([
                     [
@@ -156,7 +157,7 @@ class User_questions extends Seeder
                         'option' => 'I feel okay in all weather',
                         'type' => 'balance_prakruti'],
                     ]),
-                'have_followup' => true,
+                'have_followup' => 1,
                 'followup_questions' => json_encode([
                     [
                         'question'=>'Do you get acidity or heart burn in summer?',
@@ -179,12 +180,12 @@ class User_questions extends Seeder
                         'type'=>'balance_prakruti'
                     ]
                 ]),
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'type' => "prakruti",
-                'ui_type' => 'select',
+                'ui_type' => '',
                 'question' => "How often do you feel hungry?",
                 'options' => json_encode([
                     [
@@ -208,7 +209,7 @@ class User_questions extends Seeder
                         'type' => 'Vata-pitta',
                     ],
                 ]),
-                'have_followup' => true,
+                'have_followup' => 1,
                 'followup_questions' => json_encode([
                     [
                         'question' => 'Do you eat small meals but snack often?',
@@ -227,12 +228,12 @@ class User_questions extends Seeder
                     ],
                 ]),
                 
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'type' => "prakruti",
-                'ui_type' => 'select',
+                'ui_type' => '',
                 'question' => "How is your digestion?",
                 'options' => json_encode([
                     [
@@ -256,14 +257,15 @@ class User_questions extends Seeder
                         'type' => 'Vata-pitta',
                     ]
                 ]),
-                'have_followup' => false,
+                'have_followup' => 0,
                 'followup_questions' => json_encode([]),
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'type' => "prakruti",
-                'ui_type' => 'select',
+                'ui_type' => '',
                 'question' => "How is your sleep?",
                 'options' => json_encode([
                     [
@@ -279,7 +281,7 @@ class User_questions extends Seeder
                         'type' => 'kapha',
                     ]
                 ]),
-                'have_followup' => true,
+                'have_followup' => 1,
                 'followup_questions' => json_encode([
                     [
                         'question' => 'Is it hard for you to relax before sleep?',
@@ -297,12 +299,13 @@ class User_questions extends Seeder
                         'type' => 'kapha'
                     ]
                 ]),
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'type' => "prakruti",
-                'ui_type' => 'select',
+                'ui_type' => '',
                 'question' => "How do you respond to stress?",
                 'options' => json_encode([
                     [
@@ -318,14 +321,15 @@ class User_questions extends Seeder
                         'type' => 'kapha',
                     ]
                 ]),
-                'have_followup' => false,
+                'have_followup' => 0,
                 'followup_questions' => json_encode([]),
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'type' => "prakruti",
-                'ui_type' => 'select',
+                'ui_type' => '',
                 'question' => "How do you feel most of the time?",
                 'options' => json_encode([
                     [
@@ -341,7 +345,7 @@ class User_questions extends Seeder
                         'type' => 'km kapha',
                     ]
                 ]),
-                'have_followup' => true,
+                'have_followup' => 1,
                 'followup_questions' => json_encode([
                     [
                         'question' => 'Do you often feel restless or nervous?',
@@ -359,12 +363,13 @@ class User_questions extends Seeder
                         'type' => 'kapha'
                     ]
                 ]),
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'type' => "prakruti",
-                'ui_type' => 'select',
+                'ui_type' => '',
                 'question' => "How would you describe your skin?",
                 'options' => json_encode([
                     [
@@ -388,7 +393,7 @@ class User_questions extends Seeder
                         'type' => 'Pitta',
                     ]
                 ]),
-                'have_followup' => true,
+                'have_followup' => 1,
                 'followup_questions' => json_encode([
                     [
                         'question' => 'Does your skin feel rough or flaky?',
@@ -411,12 +416,13 @@ class User_questions extends Seeder
                         'type' => 'Mix of vata pitta and kapha'
                     ]
                 ]),
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
                 'type' => "prakruti",
-                'ui_type' => 'select',
+                'ui_type' => '',
                 'question' => "How is your memory?",
                 'options' => json_encode([
                     [
@@ -436,7 +442,7 @@ class User_questions extends Seeder
                         'type' => 'balance_prakruti',
                     ]
                 ]),
-                'have_followup' => 'true',
+                'have_followup' => 1,
                 'followup_questions' => json_encode([
                     [
                         'question' => 'Do you often forget things or name?',
@@ -454,8 +460,9 @@ class User_questions extends Seeder
                         'type' => 'kapha'
                     ]
                 ]),
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ]
         ]);
     }
